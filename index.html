@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stationary Items Inventory</title>
+    <!-- <link href="styles.css" rel="stylesheet" type="text/css"> -->
+</head>
+<body>
+    <h1>Add Item</h1>
+    <form id="addItemForm">
+        <label for="name">Item Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required><br><br>
+        
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+        
+        <input type="submit" value="Add Item" id="addItem">
+    </form>
+
+    <h2>Item List</h2>
+    <div id="itemList">
+    </div>
+
+    <script src = 'script.js'></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js'></script>
+</body>
+</html>
